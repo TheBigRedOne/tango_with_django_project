@@ -48,6 +48,7 @@
     <Compile Include="tango_with_django_project\wsgi.py" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="rango\templates\rango\about.html" />
     <Content Include="rango\templates\rango\index.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
@@ -57,6 +58,7 @@
     <Folder Include="rango\templates\" />
     <Folder Include="rango\templates\rango\" />
     <Folder Include="tango_with_django_project\" />
+    <Folder Include="tango_with_django_project\media\" />
     <Folder Include="tango_with_django_project\static\" />
     <Folder Include="tango_with_django_project\static\images\" />
   </ItemGroup>
