@@ -16,11 +16,12 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-# Uncomment next two lines to enable admin:
-#from django.contrib import admin
-#from django.urls import path
+from django.conf.urls import url, include
+from django.contrib import admin
+from rango import views
 
 urlpatterns = [
-    # Uncomment the next line to enable the admin:
-    #path('admin/', admin.site.urls)
-]
+    url(r'^$', views.index, name='index'),
+    url(r'^rango/', include('rango.urls')),
+    url(r'admin/', admin.site.urls),
+    ]
