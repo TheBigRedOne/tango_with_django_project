@@ -57,6 +57,8 @@
     <Folder Include="rango\templates\" />
     <Folder Include="rango\templates\rango\" />
     <Folder Include="tango_with_django_project\" />
+    <Folder Include="tango_with_django_project\static\" />
+    <Folder Include="tango_with_django_project\static\images\" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">
