@@ -52,7 +52,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="rango\templates\rango\about.html" />
+    <Content Include="rango\templates\rango\category.html" />
     <Content Include="rango\templates\rango\index.html" />
+    <Content Include="rango\templates\rango\page_list.html" />
     <Content Include="requirements.txt" />
   </ItemGroup>
   <ItemGroup>

@@ -2,15 +2,37 @@
 
 {% load staticfiles %}
 
-<html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <title></title>
+    <meta charset="utf-8" />
+    <title>Rango</title>
 </head>
 <body>
     <h1>Rango says...</h1>
+    <div>hey there partner!</div>
     <div>
-        hey there partner!<br/>
-        <strong>{{boldmessage}}</strong><br/>
+        <h2>Most Liked Categories</h2>
+        {% if categories %}
+        <ul>
+            {% for category in categories %}
+            <li><a href="/rango/category/{{category.slug}}">{{category.name}}</a></li>
+            {% endfor %}
+        </ul>
+        {% else %}
+            <strong>There are no categories present.</strong>
+        {% endif %}
+    </div>
+    <div>
+        <h2>Most Viewed Pages</h2>
+        {% if pages %}
+        <ul>
+            {% for page in pages %}
+            <li><a href="/rango/page_list/{{page.slug}}">{{page.title}}</a></li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        <strong>There are no categories present.</strong>
+        {% endif %}
     </div>
     <div>
         <a href="/rango/about/">About</a><br/>
