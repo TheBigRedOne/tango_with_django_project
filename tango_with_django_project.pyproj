@@ -68,6 +68,7 @@
     <Content Include="rango\templates\rango\cats.html" />
     <Content Include="rango\templates\rango\index.html" />
     <Content Include="rango\templates\rango\login.html" />
+    <Content Include="rango\templates\rango\logout.html" />
     <Content Include="rango\templates\rango\page_list.html" />
     <Content Include="rango\templates\rango\register.html" />
     <Content Include="requirements.txt" />
